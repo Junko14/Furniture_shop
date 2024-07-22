@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css reset -->
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+    <!-- external css for Glide -->
+    <link rel="stylesheet" href="assets/GlideCss/glide.core.css">
+    <link rel="stylesheet" href="assets/GlideCss/glide.theme.css">
+    <!-- external css for Animate On Scroll (AOS) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- external css for leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <!-- font info -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Ojuju:wght@200..800&display=swap" rel="stylesheet">
+    <!-- Own eaternal css -->
+    <link rel="stylesheet" href="assets/style.css">
+    <title>INM420 JS Libraries</title>
+</head>
+<body>
+    <header>
+        <div id="top_menu">
+            <img src="assets/IMG/Logo.png" alt="CompanyLogo">
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Online shop</a></li>
+                    <li><a href="#">Location</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="hero">
+            <div class="bloc-logo">
+                <!-- <canvas id="logo-canvas"></canvas> -->
+                <!-- <h1 href="index.html" class="logo-mask">Granim.js</h1> -->
+            </div>
+            <!-- <img  src="assets/IMG/hero.png" alt="image"> -->
+        </div>
+        <!-- Menu images are used glide  -->
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <div class="flex-item">
+                        <li class="glide__slide"><img src="assets/IMG/kitchen.png" alt="Kitchen">
+                            <p>Kitchen</p>
+                        </li>
+                    </div>
+                    <div class="flex-item">
+                        <li class="glide__slide"><img src="assets/IMG/living.png" alt="Livingroom">
+                            <p>Livingroom</p>
+                        </li>
+                    </div>
+                    <div class="flex-item">
+                        <li class="glide__slide"><img src="assets/IMG/bath.png" alt="Bathroom">
+                            <p>Bathroom</p>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+            </div>
+        </div>
+
+        <!-- Fade images are used AOS -->
+        <section class="card" data-aos="fade-left">
+            <img src="assets/IMG/Card1.png" alt="">
+            <div>
+                <h2>Best seller</h2>
+                <p>Spring is here! Let's freshen up the room! Embrace the arrival of spring with a rejuvenated living space.Check now</p>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+        </section>
+        <section class="card" data-aos="fade-right">
+            <img src="assets/IMG/Card2.png" alt="">
+            <div>
+                <h2>Best seller</h2>
+                <p>Must-Have Items to Curate Your Favorite Space</p>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+        </section>
+        <section class="card"data-aos="fade-left">
+            <img src="assets/IMG/Card3.png" alt="">
+            <div>
+                <h2>Best seller</h2>
+                <p>Green Up Your Space with Our Premium Series of Foliage Plants</p>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+        </section>
+        <section class="card" data-aos="fade-right">
+            <img src="assets/IMG/Card4.png" alt="">
+            <div>
+                <h2>Best seller</h2>
+                <p>Revamp Your Home Office with Our Exclusive Workspace Collection!</p>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+        </section>
+
+        <!-- Map setting is used leaflet -->
+        <section>
+            <div class="maparea">
+                <h3>NGreen Toronto</h3>
+                <p>If you need stylish furniture, affordable home furnishings, original home décor ideas, and a stress-free day of family-friendly fun, come visit us soon at the NGreen Toronto.</p>
+            </div>
+            <div id="map"></div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="copyright">© 2024 Junko FUJITA. All Rights Reserved.</p>
+        <ul class="md-flex">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Site Map</a></li>
+          <li><a href="#">Policy</a></li>
+        </ul>
+    </footer>
+</body>
+
+    
+    <!-- Link for Granin -->
+    <script src="assets/granim.js-2.0.0/dist/granim.min.js"></script>
+    <!-- Link for Glide -->
+    <script src="assets/GlideLib/glide.min.js"></script>
+    <!-- Link for AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Link for leaflet -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+    <!--   jQuery -->
+    <script src="assets/jquery-3.7.1.min.js"></script>
+    <!-- Link for own Js -->
+    <script src="assets/main.js"></script>
+</body>
+</html>
